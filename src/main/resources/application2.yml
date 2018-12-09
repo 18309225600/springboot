@@ -1,0 +1,7 @@
+local:
+  ip: 192.168.1.1
+
+name: springboot
+
+app:
+  name: this is ${name}
