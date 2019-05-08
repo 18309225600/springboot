@@ -23,5 +23,9 @@ The following guides illustrate how to use some features concretely:
 springboot使用抽象思维，及既然是国际配置，那就是配置习惯就是大家默认的，都一样的，直接抽象出来配置一个，
 其他的再去继承就可以得到相同的配置了。 这就是pom中看到的parent节点，这个指明了当前项目的父项目。也就是
 国际惯例配置都在父项目里面配置了。
+当然也可以在pom中看到org.springframework.boot:spring-boot-starter:2.1.4.RELEASE 下面依赖了一个org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE
 
-修改的时候，springboot提供了修改方式，例如可以在application.yml文件中修改，具体可以查看官方配置文档。
+顾名思义，自动配置。这样就找到了国际惯例配置了。
+
+修改的时候，springboot提供了修改方式，例如可以在application.yml文件中修改，具体可以查看官方配置文档，或者去找对应的依赖jar中的@ConfigurationProperties标注的类。
+也可以排序配置，用exclude=xxx.class   即不想用某个配置时，可以关闭这个的自动配置
