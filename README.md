@@ -10,4 +10,6 @@ springboot 实战全集:从springboot构建微服务到微服务的DevOps
   特性1：springboot开箱即用，快速构建一个rest接口（sayHi）
   特性2：springboot中增加单元测试
 
+2.springboot--整合thymeleaf
+  此项目中包含特性：废弃整合jsp，整合thymeleaf。
 
