@@ -1,0 +1,7 @@
+spring:
+  thymeleaf:
+    cache: false #开发时关闭缓存，以便看到实时效果
+    model: LEGACYHTML5 #默认只有HTML5 依赖nekohtml后有LEGACY用于非严格的html检查
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
